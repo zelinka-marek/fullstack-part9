@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "ts-node"
+    "ts-node": "ts-node",
+    "multiply": "ts-node src/multiplier.ts",
+    "calculate": "ts-node src/calculator.ts"
   },
   "prettier": {},
   "devDependencies": {
