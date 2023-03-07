@@ -1,6 +1,6 @@
-type Operation = "multiply" | "add" | "divide";
+export type Operation = "multiply" | "add" | "divide";
 
-function calculator(a: number, b: number, op: Operation): number {
+export function calculator(a: number, b: number, op: Operation): number {
   switch (op) {
     case "multiply": {
       return a * b;
@@ -21,13 +21,13 @@ function calculator(a: number, b: number, op: Operation): number {
   }
 }
 
-try {
-  console.log(calculator(2, 0, "divide"));
-} catch (error) {
-  let errorMessage = "Something went wrong: ";
-  if (error instanceof Error) {
-    errorMessage += error.message;
-  }
+// try {
+//   console.log(calculator(2, 0, "divide"));
+// } catch (error) {
+//   let errorMessage = "Something went wrong: ";
+//   if (error instanceof Error) {
+//     errorMessage += error.message;
+//   }
 
-  console.error(errorMessage);
-}
+//   console.error(errorMessage);
+// }
