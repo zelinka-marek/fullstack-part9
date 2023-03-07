@@ -7,11 +7,15 @@
     "dev": "ts-node-dev src/index.ts",
     "ts-node": "ts-node",
     "multiply": "ts-node src/multiplier.ts",
-    "calculate": "ts-node src/calculator.ts"
+    "calculate": "ts-node src/calculator.ts",
+    "lint": "eslint --ext .ts ."
   },
   "prettier": {},
   "devDependencies": {
     "@types/express": "^4.17.17",
+    "@typescript-eslint/eslint-plugin": "^5.54.1",
+    "@typescript-eslint/parser": "^5.54.1",
+    "eslint": "^8.35.0",
     "ts-node": "^10.9.1",
     "ts-node-dev": "^2.0.0",
     "typescript": "^4.9.5"
